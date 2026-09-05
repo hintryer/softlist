@@ -1,4 +1,4 @@
-name: VersionUpdater
+name: MDUpdater
 on:
   repository_dispatch:
   workflow_dispatch:
@@ -8,7 +8,7 @@ on:
     branches:
       - main
 jobs:
-  version-updater:
+  md-updater:
     runs-on: ubuntu-latest
     steps:
     - name: Checkout
