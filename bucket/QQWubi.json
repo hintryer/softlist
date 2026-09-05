@@ -1,16 +1,16 @@
 {
-  "name": "QQWubi_Setup_2.4.629.400.exe",
-  "category": "文本办公",
-  "version": "2.4.629.0",
-  "description": "QQ五笔输入法",
-  "homepage": "https://qq.pinyin.cn/wubi/",
-  "url": "https://qq.pinyin.cn/download_pc.php?t=wb",
-  "checkver": {
-    "url": "https://qq.pinyin.cn/wubi/",
-    "regex": "版本：([\\d.]+)"
-  },
-  "autoupdate": {
+    "name": "QQWubi_Setup_{version}.exe",
+    "category": "文本办公",
+    "version": "2.4.629.400",
+    "description": "QQ五笔输入法",
+    "homepage": "https://qq.pinyin.cn/wubi/",
     "url": "https://qq.pinyin.cn/download_pc.php?t=wb",
-    "name": "QQWubi_Setup_{version}.exe"
-  }
+    "checkver": {
+        "url": "https://qq.pinyin.cn/wubi/",
+        "regex": "版本：([\\d.]+)"
+    },
+    "autoupdate": {
+        "url": "https://qq.pinyin.cn/download_pc.php?t=wb",
+        "name": "QQWubi_Setup_{version}.exe"
+    }
 }
