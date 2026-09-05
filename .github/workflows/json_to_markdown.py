@@ -1,6 +1,8 @@
 import os
+import json
+from urllib.parse import urlparse
 
-def merge_json(input_folder="./bucket", output_file="./setting/result.json"):
+def merge_json(input_folder="./bucket", output_file="./bin/result.json"):
     """
     合并文件夹下所有 JSON 只保留指定字段
     :param input_folder: 输入文件夹，默认 ./bucket
@@ -31,8 +33,31 @@ def merge_json(input_folder="./bucket", output_file="./setting/result.json"):
                 items = data if isinstance(data, list) else [data]
 
                 for item in items:
-                    # 只保留需要的字段
-                    filtered = {key: item.get(key, "") for key in REQUIRED_FIELDS}
+                    # 优先从 architecture -> 64bit 提取下载地址，否则使用顶层 url
+                    url = ""
+                    arch = item.get("architecture", {}) or {}
+                    if isinstance(arch, dict):
+                        url = arch.get("64bit", {}).get("url", "") or arch.get("x64", {}).get("url", "")
+                    if not url:
+                        url = item.get("url", "")
+
+                    # 从 url 的 path 部分取最后一段作为 name（若存在），否则使用原 name 或空字符串
+                    name_from_url = ""
+                    if url:
+                        try:
+                            path = urlparse(url).path
+                            name_from_url = os.path.basename(path) or ""
+                        except Exception:
+                            name_from_url = ""
+
+                    # 构造最终保留字段
+                    filtered = {
+                        "name": name_from_url or item.get("name", ""),
+                        "version": item.get("version", ""),
+                        "homepage": item.get("homepage", ""),
+                        "url": url
+                    }
+
                     merged_list.append(filtered)
 
                 print(f"✅ 已处理：{filename}")
@@ -48,7 +73,7 @@ def merge_json(input_folder="./bucket", output_file="./setting/result.json"):
     #print(f"📁 输出文件：{output_file}")
     return merged_list
 
-def json_to_markdown2(json_file="./setting/result.json", md_file="./setting/result.md"):
+def json_to_markdown(json_file="./bin/result.json", md_file="./bin/result.md"):
     """
     JSON转MD表格 + 按分类排序 + 主页、下载统一为链接格式
     """
@@ -60,9 +85,9 @@ def json_to_markdown2(json_file="./setting/result.json", md_file="./setting/resu
 
     md_content = """# 软件清单
 
-    | 名称 | 版本 |  主页 | 下载 |
-    | ---- |---- | ---- | ---- |
-    """
+| 名称 | 版本 |  主页 | 下载 |
+| ---- |---- | ---- | ---- |
+"""
 
     for item in data:
         name = item.get("name", "")
