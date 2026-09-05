@@ -85,8 +85,8 @@ def json_to_markdown(json_file="./bin/result.json", md_file="./README.md"):
 
     md_content = """# 软件清单
 
-| 名称 | 版本 |  主页 | 下载 |
-| ---- |---- | ---- | ---- |
+| 名称 | 版本 | 主页 | 下载 |
+| ---- | ---- | ---- | ---- |
 """
 
     for item in data:

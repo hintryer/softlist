@@ -1,7 +1,7 @@
 # 软件清单
 
-| 名称 | 版本 |  主页 | 下载 |
-| ---- |---- | ---- | ---- |
+| 名称 | 版本 | 主页 | 下载 |
+| ---- | ---- | ---- | ---- |
 | 360FileSetup.exe | 1.0.0.1220 | [主页](https://baoku.360.cn/soft/show/appid/2000003908) | [下载](https://sfdl.360safe.com/pcnewapp/360FileSetup.exe?channel=9510140#/360FileSetup_1.0.0.1220.exe) |
 | Clash.Verge_2.5.2_x64-setup.exe | 2.5.2 | [主页](https://github.com/clash-verge-rev/clash-verge-rev) | [下载](https://gh-proxy.org/https://github.com/clash-verge-rev/clash-verge-rev/releases/download/v2.5.2/Clash.Verge_2.5.2_x64-setup.exe#/dl.7z) |
 | windowsdesktop-runtime-10.0.9-win-x64.exe | 10.0.9 | [主页](https://dotnet.microsoft.com/) | [下载](https://dotnetcli.blob.core.windows.net/dotnet/WindowsDesktop/10.0.9/windowsdesktop-runtime-10.0.9-win-x64.exe) |
