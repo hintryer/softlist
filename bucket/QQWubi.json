@@ -1,12 +1,12 @@
 {
-    "version": "2.4.629.0",
+    "version": "2.4.629.400",
     "description": "QQ五笔输入法",
     "homepage": "https://qq.pinyin.cn/wubi/",
     "license": "Freeware",
     "architecture": {
         "64bit": {
             "url": "https://qq.pinyin.cn/download_pc.php?t=wb#/QQWubi_Setup_2.4.629.400.exe",
-            "hash": "SHA256‑HASH‑HERE"
+            "hash": "2e900e402da26b8fc4e83843fc59996d91fa4976e0a3a60c3ea745773f401411"
         }
     },
     "installer": {
