@@ -1,17 +1,37 @@
 {
-  "name": "360FileSetup_1.0.0.1220.exe",
-  "category": "其它工具",
-  "version": "1.0.0.0",
-  "description": "360多标签文件管理器",
-  "homepage": "https://baoku.360.cn/soft/show/appid/2000003908",
-  "url": "https://sfdl.360safe.com/pcnewapp/360FileSetup.exe?channel=9510140",
-  "hash": "auto",
-  "checkver": {
-    "url": "https://baoku.360.cn/soft/show/appid/2000003908",
-    "regex": "(?s)<span[^>]*>版本</span>\\s*<span[^>]*>([\\d.]+)</span>"
-  },
-  "autoupdate": {
-    "url": "https://sfdl.360safe.com/pcnewapp/360FileSetup.exe?channel=9510140",
-    "name": "360FileSetup_{version}.exe"
-  }
+    "version": "1.0.0.0",
+    "description": "360多标签文件管理器",
+    "homepage": "https://baoku.360.cn/soft/show/appid/2000003908",
+    "license": "Freeware",
+    "architecture": {
+        "64bit": {
+            "url": "https://sfdl.360safe.com/pcnewapp/360FileSetup.exe?channel=9510140#/360FileSetup_$version.exe",
+            "hash": "SHA256-HASH-HERE"
+        }
+    },
+    "installer": {
+        "script": [
+            "Start-Process \"$dir\\360FileSetup_$version.exe\" -ArgumentList \"/S\" -Wait",
+            "Remove-Item \"$dir\\360FileSetup_$version.exe\" -Force"
+        ]
+    },
+    "uninstaller": {
+        "script": [
+            "$uninstallInfo = Get-ItemProperty \"HKLM:\\Software\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\*\" -ErrorAction SilentlyContinue | Where-Object { $_.DisplayName -match \"360多标签文件管理器\" } | Select-Object -First 1",
+            "if ($uninstallInfo -and $uninstallInfo.UninstallString) {",
+            "    Start-Process cmd.exe -ArgumentList \"/c $($uninstallInfo.UninstallString) /S\" -Wait",
+            "}"
+        ]
+    },
+    "checkver": {
+        "url": "https://baoku.360.cn/soft/show/appid/2000003908",
+        "regex": "(?s)<span[^>]*>版本</span>\\s*<span[^>]*>([\\d.]+)</span>"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://sfdl.360safe.com/pcnewapp/360FileSetup.exe?channel=9510140#/360FileSetup_$version.exe"
+            }
+        }
+    }
 }

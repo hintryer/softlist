@@ -1,16 +1,35 @@
 {
-    "name": "QQWubi_Setup_{version}.exe",
-    "category": "文本办公",
-    "version": "2.4.629.400",
+    "version": "2.4.629.0",
     "description": "QQ五笔输入法",
     "homepage": "https://qq.pinyin.cn/wubi/",
-    "url": "https://qq.pinyin.cn/download_pc.php?t=wb",
+    "license": "Freeware",
+    "architecture": {
+        "64bit": {
+            "url": "https://qq.pinyin.cn/download_pc.php?t=wb#/QQWubi_Setup_2.4.629.400.exe",
+            "hash": "SHA256‑HASH‑HERE"
+        }
+    },
+    "installer": {
+        "script": [
+            "Start‑Process \"$dir\\QQWubi_Setup_$version.exe\" /verysilent /norestart -Wait",
+            "Remove‑Item \"$dir\\QQWubi_Setup_$version.exe\" -Force"
+        ]
+    },
+    "uninstaller": {
+        "script": [
+            "$uninstallPath = Get‑ItemProperty \"HKLM:\\Software\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\*\" -ErrorAction SilentlyContinue | Where‑Object { $_.DisplayName -match 'QQ五笔' } | Select‑Object -ExpandProperty UninstallString -First 1",
+            "if ($uninstallPath) { Start‑Process cmd.exe -ArgumentList \"/c $uninstallPath /verysilent /norestart\" -Wait }"
+        ]
+    },
     "checkver": {
         "url": "https://qq.pinyin.cn/wubi/",
         "regex": "版本：([\\d.]+)"
     },
     "autoupdate": {
-        "url": "https://qq.pinyin.cn/download_pc.php?t=wb",
-        "name": "QQWubi_Setup_{version}.exe"
+        "architecture": {
+            "64bit": {
+                "url": "https://qq.pinyin.cn/download_pc.php?t=wb#/QQWubi_Setup_$version.exe"
+            }
+        }
     }
 }
