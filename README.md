@@ -5,7 +5,6 @@
 | 360File | 1.0.0.1220 | [主页](https://baoku.360.cn/soft/show/appid/2000003908) | [下载](https://sfdl.360safe.com/pcnewapp/360FileSetup.exe?channel=9510140#/360FileSetup_1.0.0.1220.exe) |
 | Clash-Verge-Rev | 2.5.2 | [主页](https://github.com/clash-verge-rev/clash-verge-rev) | [下载](https://gh-proxy.org/https://github.com/clash-verge-rev/clash-verge-rev/releases/download/v2.5.2/Clash.Verge_2.5.2_x64-setup.exe#/dl.7z) |
 | dotnet-desktop-runtime-10 | 10.0.9 | [主页](https://dotnet.microsoft.com/) | [下载](https://dotnetcli.blob.core.windows.net/dotnet/WindowsDesktop/10.0.9/windowsdesktop-runtime-10.0.9-win-x64.exe) |
-| dotnet-desktop-runtime-11 | 11.0.0-preview.5.26302.115 | [主页](https://dotnet.microsoft.com/) | [下载](https://dotnetcli.blob.core.windows.net/dotnet/WindowsDesktop/11.0.0-preview.5.26302.115/windowsdesktop-runtime-11.0.0-preview.5.26302.115-win-x64.exe) |
 | dotnet-desktop-runtime-6 | 6.0.36 | [主页](https://dotnet.microsoft.com/) | [下载](https://dotnetcli.blob.core.windows.net/dotnet/WindowsDesktop/6.0.36/windowsdesktop-runtime-6.0.36-win-x64.exe) |
 | dotnet-desktop-runtime-7 | 7.0.20 | [主页](https://dotnet.microsoft.com/) | [下载](https://dotnetcli.blob.core.windows.net/dotnet/WindowsDesktop/7.0.20/windowsdesktop-runtime-7.0.20-win-x64.exe) |
 | dotnet-desktop-runtime-8 | 8.0.28 | [主页](https://dotnet.microsoft.com/) | [下载](https://dotnetcli.blob.core.windows.net/dotnet/WindowsDesktop/8.0.28/windowsdesktop-runtime-8.0.28-win-x64.exe) |
