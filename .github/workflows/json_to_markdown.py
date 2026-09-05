@@ -73,7 +73,7 @@ def merge_json(input_folder="./bucket", output_file="./bin/result.json"):
     #print(f"📁 输出文件：{output_file}")
     return merged_list
 
-def json_to_markdown(json_file="./bin/result.json", md_file=".README.md"):
+def json_to_markdown(json_file="./bin/result.json", md_file="./README.md"):
     """
     JSON转MD表格 + 按分类排序 + 主页、下载统一为链接格式
     """
