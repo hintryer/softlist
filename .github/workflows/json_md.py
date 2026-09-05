@@ -4,8 +4,11 @@ import json
 def json_md(input_folder="./bucket", md_out="./README.md"):
     md_lines = ["# 软件清单", "", "| 名称 | 版本 | 主页 | 下载 |", "| ---- | ---- | ---- | ---- |"]
     count = 0
+    # 获取文件列表 + 字母排序（不区分大小写）
+    filenames = os.listdir(input_folder)
+    filenames = sorted(filenames, key=str.lower)
 
-    for filename in os.listdir(input_folder):
+    for filename in filenames:
         if filename.lower().endswith(".json"):
             file_path = os.path.join(input_folder, filename)
             try:
