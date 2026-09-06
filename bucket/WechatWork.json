@@ -3,7 +3,7 @@
     "description": "企业微信",
     "version": "5.0.10.6015",
     "license": "Freeware",
-    "url": "https://dldir1.qq.com/wework/work_weixin/WeCom_5.0.10.6015.exe#/wechat.7z",
+    "url": "https://dldir1.qq.com/wework/work_weixin/WeCom_5.0.10.6015.exe",
     "hash": "d46b1cc2603c70ff9cccd85998eed0c0d61f11a3a68e050b0695111294c10c87",
     "post_install": "Start-Process -Wait \"$dir\\$version\\wxdriveinstaller.exe\" -Verb RunAs",
     "shortcuts": [
@@ -17,6 +17,6 @@
         "regex": "WeCom_([\\d.]+).exe"
     },
     "autoupdate": {
-        "url": "https://dldir1.qq.com/wework/work_weixin/WeCom_$version.exe#/wechat.7z"
+        "url": "https://dldir1.qq.com/wework/work_weixin/WeCom_$version.exe"
     }
 }
