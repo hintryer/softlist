@@ -9,8 +9,8 @@
 | dotnet-desktop-runtime-7 | 7.0.20 | [主页](https://dotnet.microsoft.com/) | [下载](https://dotnetcli.blob.core.windows.net/dotnet/WindowsDesktop/7.0.20/windowsdesktop-runtime-7.0.20-win-x64.exe) |
 | dotnet-desktop-runtime-8 | 8.0.28 | [主页](https://dotnet.microsoft.com/) | [下载](https://dotnetcli.blob.core.windows.net/dotnet/WindowsDesktop/8.0.28/windowsdesktop-runtime-8.0.28-win-x64.exe) |
 | dotnet-desktop-runtime-9 | 9.0.17 | [主页](https://dotnet.microsoft.com/) | [下载](https://dotnetcli.blob.core.windows.net/dotnet/WindowsDesktop/9.0.17/windowsdesktop-runtime-9.0.17-win-x64.exe) |
-| FSviewer | 8.5 | [主页](https://www.faststone.org/FSViewerDetail.htm) | [下载](https://www.faststonesoft.net/DN/FSViewer85.zip) |
-| QQ | 9.7.25.29417 | [主页](https://im.qq.com) | [下载](https://qqdl.gtimg.cn/qqfile/qq/PCQQ/PCQQ9.7.25/QQ9.7.25.29417.exe#/dl.7z) |
+| FSviewer | 8.3 | [主页](https://www.faststone.org/FSViewerDetail.htm) | [下载](https://www.faststonesoft.net/DN/FSViewer85.zip) |
+| QQ | 9.7.25.29417 | [主页](https://im.qq.com) | [下载](https://qqdl.gtimg.cn/qqfile/qq/PCQQ/PCQQ9.7.25/QQ9.7.25.29417.exe) |
 | QQWubi | 2.4.629.400 | [主页](https://qq.pinyin.cn/wubi/) | [下载](https://qq.pinyin.cn/download_pc.php?t=wb#/QQWubi_Setup_2.4.629.400.exe) |
-| Wechat | 4.1.13.63 | [主页](https://pc.weixin.qq.com/) | [下载](https://dldir1v6.qq.com/weixin/Universal/Windows/WeChatWin.exe#/dl.7z) |
-| WechatWork | 5.0.10.6015 | [主页](https://work.weixin.qq.com/) | [下载](https://dldir1.qq.com/wework/work_weixin/WeCom_5.0.10.6015.exe#/wechat.7z) |
+| Wechat | 4.1.13.63 | [主页](https://pc.weixin.qq.com/) | [下载](https://dldir1v6.qq.com/weixin/Universal/Windows/WeChatWin.exe) |
+| WechatWork | 5.0.10.6015 | [主页](https://work.weixin.qq.com/) | [下载](https://dldir1.qq.com/wework/work_weixin/WeCom_5.0.10.6015.exe) |
