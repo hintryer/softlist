@@ -1,24 +1,37 @@
 name: MDUpdater
 on:
   workflow_dispatch:
-  push:
-    branches:
-      - main
+  schedule:
+    - cron: "0 0 * * *"
 permissions:
   contents: write
+
 jobs:
-  md-updater:
+  updater:
     runs-on: ubuntu-latest
     steps:
-    - name: Checkout
-      uses: actions/checkout@v6
-    - name: pip install
-      run: if [ -f '.github/workflows/requirements.txt' ];then pip install -r .github/workflows/requirements.txt;fi
-    - name: Update
-      run: python .github/workflows/json_md.py
-    - name: GH commit
-      uses: stefanzweifel/git-auto-commit-action@v7
-      with:
-        file_pattern: "*.md"
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Checkout
+        uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+
+      - name: Setup Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.14"
+
+      - name: pip install
+        run: |
+          if [ -f '.github/workflows/requirements.txt' ];then
+            pip install -r .github/workflows/requirements.txt
+          fi
+
+      - name: Update
+        run: python .github/workflows/json_md.py
+
+      - name: Git Auto Commit
+        uses: stefanzweifel/git-auto-commit-action@v7.2.0
+        with:
+          commit_message: "🤖 Auto update files"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

@@ -1,8 +1,34 @@
 import os
 import json
+import subprocess
+from pathlib import Path
 
-def json_md(input_folder="./bucket", md_out="./README.md"):
-    md_lines = ["# 软件清单", "", "| 名称 | 版本 | 主页 | 下载 |", "| ---- | ---- | ---- | ---- |"]
+def get_file_git_date(file_path: str) -> str | None:
+    cmd = [
+        "git",
+        "log",
+        "-1",
+        "--pretty=format:%cd",
+        "--date=short",
+        "--",
+        file_path
+    ]
+    result = subprocess.run(
+        cmd,
+        capture_output=True,
+        text=True,
+        encoding="utf-8"
+    )
+    output = result.stdout.strip()
+    # 无输出=文件从未提交到git
+    if not output:
+        return None
+    return output
+
+out_file = Path("README.md")
+
+def json_md(input_folder="./bucket", md_out=out_file):
+    md_lines = ["# 软件清单", "", "| 名称 | 版本 | 主页 | 下载 | 更新日期 |", "| ---- | ---- | ---- | ---- | -------- |"]
     count = 0
     # 获取文件列表 + 字母排序（不区分大小写）
     filenames = os.listdir(input_folder)
@@ -18,7 +44,6 @@ def json_md(input_folder="./bucket", md_out="./README.md"):
                 print(f"[跳过] {filename} 读取失败: {e}")
                 continue
 
-            name = filename.split(".")[0]
             homepage_val = data.get("homepage", "")
             version_val = data.get("version", "")
             # 优先64bit地址
@@ -33,8 +58,13 @@ def json_md(input_folder="./bucket", md_out="./README.md"):
                 homepage_val = f"[主页]({homepage_val})"
             if url_val:
                 url_val = f"[下载]({url_val})"
+            url_val = url_val.replace("#/dl.7z", "")
+            name = url_val.rstrip('/').split('/')[-1]
+            name = name.replace(")", "")
 
-            row = f"| {name} | {version_val} | {homepage_val} | {url_val} |"
+            update_date = get_file_git_date(file_path)
+
+            row = f"| {name} | {version_val} | {homepage_val} | {url_val} | {update_date} |"
             md_lines.append(row)
             count += 1
             print(f"✅已处理: {filename}")
