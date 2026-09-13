@@ -1,0 +1,20 @@
+{
+    "version": "1.74.0",
+    "description": "uBlock Origin — 高效广谱广告/追踪器拦截扩展",
+    "homepage": "https://github.com/gorhill/uBlock",
+    "license": "GPL-3.0-only",
+    "notes": [
+        "本包下载官方 GitHub Release 的 Chromium crx，Scoop无法直接安装浏览器扩展"
+    ],
+    "url": "https://github.com/gorhill/uBlock/releases/download/${version}/uBlock0_${version}.chromium.crx",
+    "hash": "SHA256:替换成下载crx后的sha256",
+    "checkver": {
+        "github": "gorhill/uBlock"
+    },
+    "autoupdate": {
+        "url": "https://github.com/gorhill/uBlock/releases/download/${version}/uBlock0_${version}.chromium.crx",
+        "hash": {
+            "mode": "download"
+        }
+    }
+}

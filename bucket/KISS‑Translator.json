@@ -1,0 +1,23 @@
+{
+    "version": "2.0.32",
+    "description": "KISS‑Translator 简约双语翻译扩展 Chromium/Edge MV3",
+    "homepage": "https://github.com/fishjar/kiss-translator",
+    "license": "GPL‑3.0‑only",
+    "notes": [
+        "Scoop仅下载解压扩展包，不会自动安装浏览器扩展",
+        "使用：Chrome/Edge扩展管理页面，开启开发者模式 →【加载已解压的扩展程序】，选中本应用目录($dir)",
+        "该包为Manifest V3，新版Chrome/Edge完整支持"
+    ],
+    "url": "https://github.com/fishjar/kiss-translator/releases/download/v${version}/kiss-translator_v${version}_chrome.zip",
+    "hash": "SHA256:替换为实际下载zip后scoop hash获取哈希",
+    "extract_dir": ".",
+    "checkver": {
+        "github": "fishjar/kiss-translator"
+    },
+    "autoupdate": {
+        "url": "https://github.com/fishjar/kiss-translator/releases/download/v${version}/kiss-translator_v${version}_chrome.zip",
+        "hash": {
+            "mode": "download"
+        }
+    }
+}

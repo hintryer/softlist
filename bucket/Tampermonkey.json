@@ -1,0 +1,19 @@
+{
+  "version": "5.6.6239",
+  "description": "Tampermonkey 用户脚本管理器（篡改猴），浏览器扩展",
+  "homepage": "https://www.tampermonkey.net/",
+  "license": "Proprietary",
+  "notes": "本包仅下载CRX扩展文件，需要手动拖入Chrome/Edge扩展页面安装，Scoop无法直接安装浏览器扩展。",
+  "url": "https://www.tampermonkey.net/crx/tampermonkey_stable.crx",
+  "hash": "SHA256:替换为实际下载crx后的sha256",
+  "checkver": {
+    "url": "https://www.tampermonkey.net/changelog.php?locale=zh",
+    "re": "id=\"v([\\d.]+)\""
+  },
+  "autoupdate": {
+    "url": "https://www.tampermonkey.net/crx/tampermonkey_stable.crx#/tampermonkey_stable_$version.crx",
+    "hash": {
+      "mode": "download"
+    }
+  }
+}
