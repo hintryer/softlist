@@ -12,7 +12,7 @@
     "hash": "SHA256:替换为实际下载zip后scoop hash获取哈希",
     "extract_dir": ".",
     "checkver": {
-        "github": "fishjar/kiss-translator"
+        "github": "https://github.com/fishjar/kiss-translator"
     },
     "autoupdate": {
         "url": "https://github.com/fishjar/kiss-translator/releases/download/v${version}/kiss-translator_v${version}_chrome.zip",

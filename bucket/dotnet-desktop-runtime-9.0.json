@@ -1,46 +1,50 @@
 {
-  "version": "9.0.17",
-  "description": "The .NET Desktop Runtime enables you to run Windows desktop applications. This release includes the .NET Runtime.",
-  "homepage": "https://dotnet.microsoft.com/",
-  "license": "MIT",
-  "architecture": {
-    "32bit": {
-      "url": "https://dotnetcli.blob.core.windows.net/dotnet/WindowsDesktop/9.0.17/windowsdesktop-runtime-9.0.17-win-x86.exe"
+    "version": "9.0.20",
+    "description": ".NET Desktop Runtime 9.0，包含WPF/WinForms运行库",
+    "homepage": "https://dotnet.microsoft.com/zh-cn/download/dotnet/9.0",
+    "license": "MIT",
+    "suggest": {
+        "vcredist": "vcredist2022"
     },
-    "64bit": {
-      "url": "https://dotnetcli.blob.core.windows.net/dotnet/WindowsDesktop/9.0.17/windowsdesktop-runtime-9.0.17-win-x64.exe"
-    }
-  },
-  "installer": {
-    "script": [
-      "Expand-DarkArchive \"$dir\\$fname\" \"$dir\\extracted\" -Removal",
-      "Get-ChildItem \"$dir\\extracted\\AttachedContainer\\*.msi\" | ForEach-Object { Expand-MsiArchive $_ \"$dir\" }",
-      "Move-Item \"$dir\\dotnet\\*\" \"$dir\" -Force",
-      "@('dotnet', 'extracted') | ForEach-Object { Remove-Item \"$dir\\$_\" -Recurse }"
-    ]
-  },
-  "depends": "dark",
-  "bin": "dotnet.exe",
-  "env_set": {
-    "DOTNET_ROOT": "$dir"
-  },
-  "checkver": {
-    "url": "https://dotnetcli.blob.core.windows.net/dotnet/release-metadata/releases-index.json",
-    "jsonpath": "$.releases-index[?(@['channel-version']=='9.0')]['latest-runtime']"
-  },
-  "autoupdate": {
     "architecture": {
-      "32bit": {
-        "url": "https://dotnetcli.blob.core.windows.net/dotnet/WindowsDesktop/$version/windowsdesktop-runtime-$version-win-x86.exe"
-      },
-      "64bit": {
-        "url": "https://dotnetcli.blob.core.windows.net/dotnet/WindowsDesktop/$version/windowsdesktop-runtime-$version-win-x64.exe"
-      }
+        "64bit": {
+            "url": "https://dotnetcli.azureedge.net/dotnet/WindowsDesktop/9.0.20/windowsdesktop-runtime-9.0.20-win-x64.exe",
+            "hash": "sha512:5c7caacef8bd65a7631ff0be6cd1059b523eb9ab4e1021078921926da0bdc05b468bcbdf1f95fc12cb984bc4e97df9fbc40f942a618c716902c7c99150c4de7e"
+        },
+        "32bit": {
+            "url": "https://dotnetcli.azureedge.net/dotnet/WindowsDesktop/9.0.20/windowsdesktop-runtime-9.0.20-win-x86.exe",
+            "hash": "sha512:be117aa8aa660a840393b23ec63bf085e9cb921f9657746b37b084c04168831076445cd33fb6bcb8ecb78eb5fe783313d832d47c6ace36fa1dab2bb524cf76cf"
+        },
+        "arm64": {
+            "url": "https://dotnetcli.azureedge.net/dotnet/WindowsDesktop/9.0.20/windowsdesktop-runtime-9.0.20-win-arm64.exe",
+            "hash": "sha512:757059f9b87fb833c3fe645046c7a21c1ca9ceb095de0791b4c78b6a4d3e10efd034c2b5751b8788a5dba8108b7c2ae9aa95feca8568c9988f896379605594a5"
+        }
     },
-    "hash": {
-      "mode": "extract",
-      "url": "https://dotnetcli.blob.core.windows.net/dotnet/checksums/$version-sha.txt"
+    "env_add_path": ".",
+    "env_set": {
+        "DOTNET_ROOT": "$dir",
+        "MSBuildSDKsPath": "$dir\\sdk\\$version\\Sdks"
+    },
+    "pre_uninstall": "info 'If the uninstall fails with a message saying that access is denied, you may need to log out of your current account, log back in and try again.'",
+    "checkver": {
+        "url": "https://dotnetcli.blob.core.windows.net/dotnet/release-metadata/releases-index.json",
+        "jsonpath": "$.releases-index[?(@['channel-version']=='9.0')]['latest-runtime']"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://dotnetcli.azureedge.net/dotnet/WindowsDesktop/$version/windowsdesktop-runtime-$version-win-x64.exe"
+            },
+            "32bit": {
+                "url": "https://dotnetcli.azureedge.net/dotnet/WindowsDesktop/$version/windowsdesktop-runtime-$version-win-x86.exe"
+            },
+            "arm64": {
+                "url": "https://dotnetcli.azureedge.net/dotnet/WindowsDesktop/$version/windowsdesktop-runtime-$version-win-arm64.exe"
+            }
+        },
+        "hash": {
+            "url": "https://dotnetcli.blob.core.windows.net/dotnet/release-metadata/$majorVersion.$minorVersion/releases.json",
+            "regex": "(?s)$basename.*?$sha512"
+        }
     }
-  },
-  "notes": "This package only contains the .NET Desktop Runtime. Install dotnet-sdk if you need development tools."
 }

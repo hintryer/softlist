@@ -9,7 +9,7 @@
     "url": "https://github.com/gorhill/uBlock/releases/download/${version}/uBlock0_${version}.chromium.crx",
     "hash": "SHA256:替换成下载crx后的sha256",
     "checkver": {
-        "github": "gorhill/uBlock"
+        "github": "https://github.com/gorhill/uBlock"
     },
     "autoupdate": {
         "url": "https://github.com/gorhill/uBlock/releases/download/${version}/uBlock0_${version}.chromium.crx",
