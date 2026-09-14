@@ -6,13 +6,13 @@
     "notes": [
         "本包下载官方 GitHub Release 的 Chromium crx，Scoop无法直接安装浏览器扩展"
     ],
-    "url": "https://github.com/gorhill/uBlock/releases/download/${version}/uBlock0_${version}.chromium.crx",
+    "url": "https://github.com/gorhill/uBlock/releases/download/$version/uBlock0_$version.chromium.crx",
     "hash": "SHA256:替换成下载crx后的sha256",
     "checkver": {
         "github": "https://github.com/gorhill/uBlock"
     },
     "autoupdate": {
-        "url": "https://github.com/gorhill/uBlock/releases/download/${version}/uBlock0_${version}.chromium.crx",
+        "url": "https://github.com/gorhill/uBlock/releases/download/$version/uBlock0_$version.chromium.crx",
         "hash": {
             "mode": "download"
         }
