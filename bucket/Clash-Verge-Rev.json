@@ -1,16 +1,16 @@
 {
-    "version": "2.5.5",
+    "version": "2.5.7",
     "description": "Continuation of Clash Verge - A Clash Meta GUI based on Tauri.",
     "homepage": "https://github.com/clash-verge-rev/clash-verge-rev",
     "license": "GPL-3.0-only",
     "architecture": {
         "64bit": {
-            "url": "https://gh-proxy.org/https://github.com/clash-verge-rev/clash-verge-rev/releases/download/v2.5.5/Clash.Verge_2.5.5_x64-setup.exe#/dl.7z",
-            "hash": "b00cefd93f4abaaf41f0dc62b9f441ae40f4e47d68590e58cb54e2eb5a11a4f3"
+            "url": "https://gh-proxy.org/https://github.com/clash-verge-rev/clash-verge-rev/releases/download/v2.5.7/Clash.Verge_2.5.7_x64-setup.exe#/dl.7z",
+            "hash": "91990f1c1d7bfd3ca3de0faafef462b2305dc24afcf5c0dfcbe8d38dce0bf8b8"
         },
         "arm64": {
-            "url": "https://gh-proxy.org/https://github.com/clash-verge-rev/clash-verge-rev/releases/download/v2.5.5/Clash.Verge_2.5.5_arm64-setup.exe#/dl.7z",
-            "hash": "c12fda8497be4876f76ed05cbb0b4de2861e09ee9d9b0ffd17684cfeb5a743a1"
+            "url": "https://gh-proxy.org/https://github.com/clash-verge-rev/clash-verge-rev/releases/download/v2.5.7/Clash.Verge_2.5.7_arm64-setup.exe#/dl.7z",
+            "hash": "280d438e6d2eec2e010964b81a23527ea3fca267bbbc838fa4861cb013281f6f"
         }
     },
     "pre_install": "Remove-Item \"$dir\\`$*\", \"$dir\\uninst*\" -Force -Recurse",
