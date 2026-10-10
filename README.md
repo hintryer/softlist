@@ -3,7 +3,7 @@
 | 名称 | 版本 | 主页 | 下载 | 更新日期 |
 | ---- | ---- | ---- | ---- | -------- |
 | 360FileSetup_1.0.0.1220.exe | 1.0.0.1220 | [主页](https://baoku.360.cn/soft/show/appid/2000003908) | [下载](https://sfdl.360safe.com/pcnewapp/360FileSetup.exe?channel=9510140#/360FileSetup_1.0.0.1220.exe) | 2026-09-05 |
-| Clash.Verge_2.5.7_x64-setup.exe | 2.5.7 | [主页](https://github.com/clash-verge-rev/clash-verge-rev) | [下载](https://gh-proxy.org/https://github.com/clash-verge-rev/clash-verge-rev/releases/download/v2.5.7/Clash.Verge_2.5.7_x64-setup.exe) | 2026-10-07 |
+| Clash.Verge_2.5.8_x64-setup.exe | 2.5.8 | [主页](https://github.com/clash-verge-rev/clash-verge-rev) | [下载](https://gh-proxy.org/https://github.com/clash-verge-rev/clash-verge-rev/releases/download/v2.5.8/Clash.Verge_2.5.8_x64-setup.exe) | 2026-10-10 |
 | windowsdesktop-runtime-10.0.12-win-x64.exe | 10.0.12 | [主页](https://dotnet.microsoft.com/zh-cn/download/dotnet/9.0) | [下载](https://dotnetcli.azureedge.net/dotnet/WindowsDesktop/10.0.12/windowsdesktop-runtime-10.0.12-win-x64.exe) | 2026-09-14 |
 | windowsdesktop-runtime-6.0.36-win-x64.exe | 6.0.36 | [主页](https://dotnet.microsoft.com/zh-cn/download/dotnet/6.0) | [下载](https://dotnetcli.azureedge.net/dotnet/WindowsDesktop/6.0.36/windowsdesktop-runtime-6.0.36-win-x64.exe) | 2026-09-14 |
 | windowsdesktop-runtime-7.0.20-win-x64.exe | 7.0.20 | [主页](https://dotnet.microsoft.com/zh-cn/download/dotnet/9.0) | [下载](https://dotnetcli.azureedge.net/dotnet/WindowsDesktop/7.0.20/windowsdesktop-runtime-7.0.20-win-x64.exe) | 2026-09-14 |
