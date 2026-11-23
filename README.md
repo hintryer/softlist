@@ -11,6 +11,7 @@
 | windowsdesktop-runtime-9.0.23-win-x64.exe | 9.0.23 | [主页](https://dotnet.microsoft.com/zh-cn/download/dotnet/9.0) | [下载](https://dotnetcli.azureedge.net/dotnet/WindowsDesktop/9.0.23/windowsdesktop-runtime-9.0.23-win-x64.exe) | 2026-11-10 |
 | FSViewerSetup85.exe | 8.5 | [主页](https://www.faststone.org/FSViewerDetail.htm) | [下载](https://www.faststonesoft.net/DN/FSViewerSetup85.exe) | 2026-09-06 |
 | i4Tools_v9.22.032_Setup_x64.exe | 9.22.032 | [主页](https://www.i4.cn/pro_pc.html) | [下载](https://d-app6.i4.cn/i4tools/V9/9.22/i4Tools_v9.22.032_Setup_x64.exe#/i4Tools_v9.22.032_Setup_x64.exe) | 2026-11-19 |
+| idman-install.exe | 643build18 | [主页](http://www.internetdownloadmanager.com) | [下载](https://mirror2.internetdownloadmanager.com/idman643build18.exe#/idman-install.exe) | 2026-11-23 |
 | kiss-translator_v2.0.32_chrome.zip | 2.0.32 | [主页](https://github.com/fishjar/kiss-translator) | [下载](https://github.com/fishjar/kiss-translator/releases/download/v2.0.32/kiss-translator_v2.0.32_chrome.zip) | 2026-09-14 |
 | QQ9.7.25.29417.exe | 9.7.25.29417 | [主页](https://im.qq.com) | [下载](https://qqdl.gtimg.cn/qqfile/qq/PCQQ/PCQQ9.7.25/QQ9.7.25.29417.exe) | 2026-09-06 |
 | QQWubi_Setup_2.4.629.400.exe | 2.4.629.400 | [主页](https://qq.pinyin.cn/wubi/) | [下载](https://qq.pinyin.cn/download_pc.php?t=wb#/QQWubi_Setup_2.4.629.400.exe) | 2026-09-05 |
