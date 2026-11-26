@@ -11,12 +11,12 @@
 | windowsdesktop-runtime-9.0.23-win-x64.exe | 9.0.23 | [主页](https://dotnet.microsoft.com/zh-cn/download/dotnet/9.0) | [下载](https://dotnetcli.azureedge.net/dotnet/WindowsDesktop/9.0.23/windowsdesktop-runtime-9.0.23-win-x64.exe) | 2026-11-10 |
 | FSViewerSetup85.exe | 8.5 | [主页](https://www.faststone.org/FSViewerDetail.htm) | [下载](https://www.faststonesoft.net/DN/FSViewerSetup85.exe) | 2026-09-06 |
 | i4Tools_v9.22.032_Setup_x64.exe | 9.22.032 | [主页](https://www.i4.cn/pro_pc.html) | [下载](https://d-app6.i4.cn/i4tools/V9/9.22/i4Tools_v9.22.032_Setup_x64.exe#/i4Tools_v9.22.032_Setup_x64.exe) | 2026-11-19 |
-| idman-install.exe | 643build18 | [主页](http://www.internetdownloadmanager.com) | [下载](https://mirror2.internetdownloadmanager.com/idman643build18.exe#/idman-install.exe) | 2026-11-23 |
+| idman-install.exe | 643build19 | [主页](http://www.internetdownloadmanager.com) | [下载](https://mirror2.internetdownloadmanager.com/idman643build19.exe#/idman-install.exe) | 2026-11-26 |
 | kiss-translator_v2.0.32_chrome.zip | 2.0.32 | [主页](https://github.com/fishjar/kiss-translator) | [下载](https://github.com/fishjar/kiss-translator/releases/download/v2.0.32/kiss-translator_v2.0.32_chrome.zip) | 2026-09-14 |
 | QQ9.7.25.29417.exe | 9.7.25.29417 | [主页](https://im.qq.com) | [下载](https://qqdl.gtimg.cn/qqfile/qq/PCQQ/PCQQ9.7.25/QQ9.7.25.29417.exe) | 2026-09-06 |
 | QQWubi_Setup_2.4.629.400.exe | 2.4.629.400 | [主页](https://qq.pinyin.cn/wubi/) | [下载](https://qq.pinyin.cn/download_pc.php?t=wb#/QQWubi_Setup_2.4.629.400.exe) | 2026-09-05 |
 | Super_Drag_and_Go_2.1.2.crx | 2.1.2 | [主页](https://www.crxsoso.com/webstore/detail/jaikcnhlohebodlpkmjepipngegjbfpg) | [下载](https://c2.crxsoso.com/crx/blobs/Abe5cL6vIDhjlxFLK5VtCT8K8KD79-jCpbKFycGk0yx1xWV4VbnQYKoVvaxCxA0uIsvIqmVkgij-aPDAQ7VmW2lQbQVP7i54jHNgV7drQTqMcnU7QuWfAMZSmuUD8PwYHla3DJWmnfdYv_Lxu8QQiQ/JAIKCNHLOHEBODLPKMJEPIPNGEGJBFPG_2_1_2_0.crx?ext=crx&filename=%E8%B6%85%E7%BA%A7%E6%8B%96%E6%8B%BD%202.1.2&type=dl#/Super_Drag_and_Go_2.1.2.crx) | 2026-09-18 |
 | tampermonkey_stable_5.5.1.crx | 5.5.1 | [主页](https://www.tampermonkey.net/) | [下载](https://www.tampermonkey.net/crx/tampermonkey_stable.crx#/tampermonkey_stable_5.5.1.crx) | 2026-10-07 |
-| uBlock0_1.77.0.chromium.crx | 1.77.0 | [主页](https://github.com/gorhill/uBlock) | [下载](https://github.com/gorhill/uBlock/releases/download/1.77.0/uBlock0_1.77.0.chromium.crx) | 2026-11-22 |
+| uBlock0_1.77.2.chromium.crx | 1.77.2 | [主页](https://github.com/gorhill/uBlock) | [下载](https://github.com/gorhill/uBlock/releases/download/1.77.2/uBlock0_1.77.2.chromium.crx) | 2026-11-26 |
 | WeChatWin_4.2.1.exe | 4.2.1 | [主页](https://pc.weixin.qq.com/) | [下载](https://dldir1v6.qq.com/weixin/Universal/Windows/WeChatWin_4.2.1.exe) | 2026-11-24 |
 | WeCom_5.0.13.6005.exe | 5.0.13.6005 | [主页](https://work.weixin.qq.com/) | [下载](https://dldir1.qq.com/wework/work_weixin/WeCom_5.0.13.6005.exe) | 2026-10-24 |
