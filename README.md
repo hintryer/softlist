@@ -19,4 +19,4 @@
 | tampermonkey_stable_5.5.1.crx | 5.5.1 | [主页](https://www.tampermonkey.net/) | [下载](https://www.tampermonkey.net/crx/tampermonkey_stable.crx#/tampermonkey_stable_5.5.1.crx) | 2026-10-07 |
 | uBlock0_1.77.2.chromium.crx | 1.77.2 | [主页](https://github.com/gorhill/uBlock) | [下载](https://github.com/gorhill/uBlock/releases/download/1.77.2/uBlock0_1.77.2.chromium.crx) | 2026-11-26 |
 | WeChatWin_4.2.1.exe | 4.2.1 | [主页](https://pc.weixin.qq.com/) | [下载](https://dldir1v6.qq.com/weixin/Universal/Windows/WeChatWin_4.2.1.exe) | 2026-11-24 |
-| WeCom_5.0.13.6005.exe | 5.0.13.6005 | [主页](https://work.weixin.qq.com/) | [下载](https://dldir1.qq.com/wework/work_weixin/WeCom_5.0.13.6005.exe) | 2026-10-24 |
+| WeCom_5.0.13.8035.exe | 5.0.13.8035 | [主页](https://work.weixin.qq.com/) | [下载](https://dldir1.qq.com/wework/work_weixin/WeCom_5.0.13.8035.exe) | 2026-11-26 |
